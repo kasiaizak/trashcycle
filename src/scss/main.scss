@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: Open sans, Arial;
-  background: #F2E9D8;
+  background: $light-beige;
   padding: 48px;
 }
 
@@ -30,7 +30,7 @@ body {
   }
 
   &__paragraph {
-    color: #0E415E;
+    color: $navy;
     font-size: 1.25rem;
     font-weight: 300;
     text-align: center;
@@ -55,11 +55,15 @@ body {
       background: $beige;
       color: #FFF;
       margin-bottom: 20px;
+
+      &::placeholder {
+        color: #FFF;
+      }
     }
     &--start {
       background: none;
-      border: 1px solid $blue;
-      color: $blue;
+      border: 1px solid $navy;
+      color: $navy;
 
     }
   }
