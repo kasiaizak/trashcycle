@@ -103,3 +103,20 @@
     }
   }
 }
+
+.statistics-share {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: $light-beige;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+}
