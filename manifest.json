@@ -2,7 +2,7 @@
   "name": "trashcycle",
   "short_name": "trashcycle",
   "theme_color": "#f2e9d8",
-  "background_color": "f2e9d8",
+  "background_color": "#f2e9d8",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/trashcycle/",
