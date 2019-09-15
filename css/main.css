@@ -438,6 +438,9 @@ body {
     .header__user-name--olive {
       font-size: 1.25rem;
       color: #7da022; }
+    .header__user-name--input {
+      font-size: 24px;
+      margin: 0; }
   .header__user-avatar {
     width: 70px;
     height: 70px;
@@ -680,6 +683,8 @@ body {
           align-self: center;
       margin-bottom: 8px;
       fill: #859FAD; }
+      .nav__item-image--active {
+        fill: #0e415e; }
       .nav__item-image--stroke {
         stroke: #859FAD; }
     .nav__item-link {
@@ -687,6 +692,8 @@ body {
       color: #859FAD;
       font-size: 10px;
       font-weight: 400; }
+      .nav__item-link--active {
+        color: #0e415e; }
 
 .images {
   display: -webkit-box;

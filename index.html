@@ -40,7 +40,7 @@
       <div class="welcome-screen__start">
         <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name welcome-screen__button--name-js hidden"
           placeholder="Your name" />
-        </br>
+        <br>
         <button class="welcome-screen__button welcome-screen__button--start welcome-screen__button--start-js hidden" disabled>START NOW!</button>
       </div>
     </section>
@@ -48,7 +48,7 @@
     <div class="user-screen hidden user-screen--js">
       <header class="header">
         <p class="header__user-name">
-          <span class="header__user-name--olive">Hello,</span> <br />Mariusz
+          <span class="header__user-name--olive">Hello,</span> <br /><span class="header__user-name header__user-name--input header__user-name--js"></span>
         </p>
         <img class="header__user-avatar" src="assets/img/avatar.png" alt="author avatar." />
       </header>
@@ -60,13 +60,11 @@
               xmlns="http://www.w3.org/2000/svg">
               <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
                 cy="16.91549431" r="15.91549431" />
-              <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100"
+              <circle class="circle-chart__circle" stroke="#7da022" stroke-width="2" stroke-dasharray="30,100"
                 stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
               <g class="circle-chart__info">
-                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                <text class="circle-chart__percent" x="16.91549431" y="16.91549431" alignment-baseline="central"
                   text-anchor="middle" font-size="8">30%</text>
-                <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="2">Yay 30% progress!</text>
               </g>
             </svg>
           </div>
@@ -157,20 +155,20 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="26.666" height="26.667"
+            <svg class="nav__item-image nav__item-image--active" xmlns="http://www.w3.org/2000/svg" width="26.666" height="26.667"
               viewBox="0 0 26.666 26.667">
               <g transform="translate(-2.666 -2.666)">
                 <path
                   d="M4,17.333H5.333v9.334A2.67,2.67,0,0,0,8,29.333H24a2.67,2.67,0,0,0,2.667-2.666V17.333H28a1.334,1.334,0,0,0,.943-2.276l-12-12a1.332,1.332,0,0,0-1.886,0l-12,12A1.333,1.333,0,0,0,4,17.333Zm9.333,9.334V20h5.334v6.667ZM16,5.885l8,8V26.667H21.333V20a2.67,2.67,0,0,0-2.666-2.667H13.333A2.67,2.67,0,0,0,10.667,20v6.667H8V13.885Z" />
               </g>
             </svg>
-            <a class="nav__item-link" href="#">Home</a>
+            <a class="nav__item-link nav__item-link--active" href="#">Home</a>
           </li>
           <li class="nav__item">
             <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
               <g transform="translate(-109 -772)">
                 <g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1">
-                  <path M2,0h8a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" stroke="none" />
+                  <path d="M2,0h8a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" stroke="none" />
                   <path d="M2,.5H9a.5.5,0,0,1,.5.5V9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,9V2A1.5,1.5,0,0,1,2,.5Z"
                     fill="none" />
                 </g>
