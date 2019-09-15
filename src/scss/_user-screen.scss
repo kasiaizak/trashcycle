@@ -4,3 +4,34 @@
   justify-content: center;
   align-items: center;
 }
+
+.header {
+  width: 375px;
+  height: 211px;
+  background: $white url("../assets/img/waves.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__user-name {
+    color: $navy;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 30px;
+
+    &--olive {
+      font-size: 1.25rem;
+      color: $green;
+    }
+  }
+
+  &__user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}

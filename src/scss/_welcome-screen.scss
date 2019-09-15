@@ -1,3 +1,20 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Open sans, Arial;
+  background: $light-beige;
+  padding: 48px;
+}
+
 .welcome-screen {
   display: flex;
   flex-direction: column;
