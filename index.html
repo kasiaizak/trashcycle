@@ -23,177 +23,216 @@
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <main class="main">
-      <section class="welcome-screen welcome-screen--js">
-        <h1 class="welcome-screen__header">trashcycle</h1>
-        <img class="welcome-screen__image" src="assets/img/hero_image.svg"
-          alt="Two people recycling trashes to recycling bin">
-      
-        <div class="welcome-screen__hello">
-          <p class="welcome-screen__paragraph welcome-screen__paragraph--js">
-            Mother Earth needs your help everyday. You can do it!
-          </p>
-          <button class="welcome-screen__button welcome-screen__button--be-eco welcome-screen__button--be-eco-js">Let’s be ECO!</button>
-        </div>
-      
-        <div class="welcome-screen__start">
-          <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name welcome-screen__button--name-js" placeholder="Your name" hidden/>
-          </br>
-          <button class="welcome-screen__button welcome-screen__button--start welcome-screen__button--start-js" hidden>START NOW!</button>
+<body>
+  <main class="main">
+    <section class="welcome-screen welcome-screen--js">
+      <h1 class="welcome-screen__header">trashcycle</h1>
+      <img class="welcome-screen__image" src="assets/img/hero_image.svg"
+        alt="Two people recycling trashes to recycling bin">
+
+      <div class="welcome-screen__hello">
+        <p class="welcome-screen__paragraph welcome-screen__paragraph--js">
+          Mother Earth needs your help everyday. You can do it!
+        </p>
+        <button class="welcome-screen__button welcome-screen__button--be-eco welcome-screen__button--be-eco-js">Let’s be ECO!</button>
+      </div>
+
+      <div class="welcome-screen__start">
+        <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name welcome-screen__button--name-js hidden"
+          placeholder="Your name" />
+        </br>
+        <button class="welcome-screen__button welcome-screen__button--start welcome-screen__button--start-js hidden" disabled>START NOW!</button>
+      </div>
+    </section>
+
+    <div class="user-screen hidden user-screen--js">
+      <header class="header">
+        <p class="header__user-name">
+          <span class="header__user-name--olive">Hello,</span> <br />Mariusz
+        </p>
+        <img class="header__user-avatar" src="../assets/img/avatar.png" alt="author avatar." />
+      </header>
+      <section class="statistics">
+        <h2 class="statistics__title">Statistics</h2>
+        <div class="statistics__average">
+          <div class="statistics__average-image">
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="150" height="150"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
+                cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100"
+                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                  text-anchor="middle" font-size="8">30%</text>
+                <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central"
+                  text-anchor="middle" font-size="2">Yay 30% progress!</text>
+              </g>
+            </svg>
+          </div>
+          <div class="statistics__average-particular">
+            <div class="statistics__particular">
+              <span class="statistics__particular-sign statistics__particular-sign--blue"></span>
+              <span class="statistics__particular-name">Paper</span>
+              <span class="statistics__particular-percent">12%</span>
+            </div>
+            <div class="statistics__particular">
+              <span class="statistics__particular-sign statistics__particular-sign--yellow"></span>
+              <span class="statistics__particular-name">Plastic</span>
+              <span class="statistics__particular-percent">23%</span>
+            </div>
+            <div class="statistics__particular">
+              <span class="statistics__particular-sign statistics__particular-sign--green"></span>
+              <span class="statistics__particular-name">Glass</span>
+              <span class="statistics__particular-percent">45%</span>
+            </div>
+            <div class="statistics-share">
+              <a class="statistics-share__link" href="#"><img class="statistics-share__link-image"
+                  src="../assets/icons/bxs-share-alt.svg" alt="icon share." /></a>
+              <a class="statistics-share__link" href="#"><img class="statistics-share__link-image"
+                  src="../assets/icons/bx-dots-vertical-rounded.svg" alt="icon more." /></a>
+            </div>
+          </div>
         </div>
       </section>
-      
-      <div class="user-screen user-screen--js hidden">
-        <header class="header">
-          <p class="header__user-name">
-            <span class="header__user-name--olive">Hello,</span> <br/>Mariusz
-          </p>
-          <img class="header__user-avatar" src="../assets/img/avatar.png" alt="author avatar." />
-        </header>
-        <section class="statistics">
-          <h2 class="statistics__title">Statistics</h2>
-          <div class="statistics__average">
-            <div class="statistics__average-image">
-              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="150" height="150"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
-                  cy="16.91549431" r="15.91549431" />
-                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100"
-                  stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                <g class="circle-chart__info">
-                  <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
-                    font-size="8">30%</text>
-                  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
-                    font-size="2">Yay 30% progress!</text>
+
+      <section class="knowledge">
+        <h2 class="knowledge__title">Eco knowledge</h2>
+        <div class="knowledge__cards">
+
+          <div class="card card--navy">
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="card__footer">
+              <span class="card__sign card__sign--violet"></span>
+              <a class="card__link" href="#">portal name</a>
+            </div>
+          </div>
+
+          <div class="card card--green">
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="card__footer">
+              <span class="card__sign card__sign--olive"></span>
+              <a class="card__link" href="#">portal name</a>
+            </div>
+          </div>
+          <div class="card card--lime-green">
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="card__footer">
+              <span class="card__sign card__sign--olive"></span>
+              <a class="card__link" href="#">portal name</a>
+            </div>
+          </div>
+          <div class="card card--dark-beige">
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="card__footer">
+              <span class="card__sign card__sign--olive"></span>
+              <a class="card__link card__link--navy" href="#">portal name</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2 class="categories__title">How to segregate waste?</h2>
+        <div class="images">
+          <div class="categories__image categories__image--paper">Paper</div>
+          <div class="categories__image categories__image--metals">Metals and <br> plastics</div>
+          <div class="categories__image categories__image--glass">Glass</div>
+          <div class="categories__image categories__image--bio">Bio</div>
+          <div class="categories__image categories__image--bulky">Bulky <br> waste</div>
+          <div class="categories__image categories__image--green">Green</div>
+          <div class="categories__image categories__image--mixed">Mixed <br> waste</div>
+          <div class="categories__image categories__image--more">More <br> info</div>
+        </div>
+      </section>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="26.666" height="26.667"
+              viewBox="0 0 26.666 26.667">
+              <g transform="translate(-2.666 -2.666)">
+                <path
+                  d="M4,17.333H5.333v9.334A2.67,2.67,0,0,0,8,29.333H24a2.67,2.67,0,0,0,2.667-2.666V17.333H28a1.334,1.334,0,0,0,.943-2.276l-12-12a1.332,1.332,0,0,0-1.886,0l-12,12A1.333,1.333,0,0,0,4,17.333Zm9.333,9.334V20h5.334v6.667ZM16,5.885l8,8V26.667H21.333V20a2.67,2.67,0,0,0-2.666-2.667H13.333A2.67,2.67,0,0,0,10.667,20v6.667H8V13.885Z" />
+              </g>
+            </svg>
+            <a class="nav__item-link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+              <g transform="translate(-109 -772)">
+                <g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1">
+                  <path M2,0h8a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" stroke="none" />
+                  <path d="M2,.5H9a.5.5,0,0,1,.5.5V9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,9V2A1.5,1.5,0,0,1,2,.5Z"
+                    fill="none" />
                 </g>
-              </svg>
-            </div>
-            <div class="statistics__average-particular">
-              <div class="statistics__particular">
-                <span
-                  class="statistics__particular-sign statistics__particular-sign--blue"
-                ></span>
-                <span class="statistics__particular-name">Paper</span>
-                <span class="statistics__particular-percent">12%</span>
-              </div>
-              <div class="statistics__particular">
-                <span
-                  class="statistics__particular-sign statistics__particular-sign--yellow"
-                ></span>
-                <span class="statistics__particular-name">Plastic</span>
-                <span class="statistics__particular-percent">23%</span>
-              </div>
-              <div class="statistics__particular">
-                <span
-                  class="statistics__particular-sign statistics__particular-sign--green"
-                ></span>
-                <span class="statistics__particular-name">Glass</span>
-                <span class="statistics__particular-percent">45%</span>
-              </div>
-              <div class="statistics-share">
-                <a class="statistics-share__link" href="#"
-                  ><img
-                    class="statistics-share__link-image"
-                    src="../assets/icons/bxs-share-alt.svg"
-                    alt="icon share."
-                /></a>
-                <a class="statistics-share__link" href="#"
-                  ><img
-                    class="statistics-share__link-image"
-                    src="../assets/icons/bx-dots-vertical-rounded.svg"
-                    alt="icon more."
-                /></a>
-              </div>
-            </div>
-          </div>
-        </section>
+                <rect width="6" height="6" rx="1" transform="translate(111 774)" />
+                <g transform="translate(0 13)">
+                  <g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1">
+                    <path d="M0,0H10a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H2A2,2,0,0,1,0,8V0A0,0,0,0,1,0,0Z" stroke="none" />
+                    <path d="M1,.5H9a.5.5,0,0,1,.5.5V9a.5.5,0,0,1-.5.5H2A1.5,1.5,0,0,1,.5,8V1A.5.5,0,0,1,1,.5Z"
+                      fill="none" />
+                  </g>
+                  <rect width="6" height="6" rx="1" transform="translate(111 774)" />
+                </g>
+                <g transform="translate(13)">
+                  <g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1">
+                    <path d="M0,0H8a2,2,0,0,1,2,2v8a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none" />
+                    <path d="M1,.5H8A1.5,1.5,0,0,1,9.5,2V9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,9V1A.5.5,0,0,1,1,.5Z"
+                      fill="none" />
+                  </g>
+                  <rect width="6" height="6" rx="1" transform="translate(111 774)" />
+                </g>
+                <g transform="translate(13 13)">
+                  <rect width="2" height="2" transform="translate(109 772)" />
+                  <rect width="2" height="2" transform="translate(112 772)" />
+                  <rect width="2" height="2" transform="translate(111 775)" />
+                  <rect width="2" height="2" transform="translate(110 778)" />
+                  <rect width="2" height="2" transform="translate(113 779)" />
+                  <rect width="2" height="2" transform="translate(115 776)" />
+                  <rect width="2" height="2" transform="translate(117 778)" />
+                  <rect width="2" height="2" transform="translate(117 780)" />
+                  <rect width="2" height="2" transform="translate(114 772)" />
+                  <rect width="2" height="2" transform="translate(117 772)" />
+                </g>
+              </g>
+            </svg>
+            <a class="nav__item-link" href="#">TrashQR</a>
+          </li>
+          <li class="nav__item">
+            <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g transform="translate(-4 -4)">
+                <path
+                  d="M5.333,17.333h8A1.333,1.333,0,0,0,14.667,16V5.333A1.333,1.333,0,0,0,13.333,4h-8A1.333,1.333,0,0,0,4,5.333V16A1.333,1.333,0,0,0,5.333,17.333ZM4,26.667A1.333,1.333,0,0,0,5.333,28h8a1.333,1.333,0,0,0,1.334-1.333V21.333A1.333,1.333,0,0,0,13.333,20h-8A1.333,1.333,0,0,0,4,21.333Zm13.333,0A1.332,1.332,0,0,0,18.667,28h8A1.332,1.332,0,0,0,28,26.667V17.333A1.332,1.332,0,0,0,26.667,16h-8a1.332,1.332,0,0,0-1.334,1.333Zm1.334-13.334h8A1.332,1.332,0,0,0,28,12V5.333A1.332,1.332,0,0,0,26.667,4h-8a1.332,1.332,0,0,0-1.334,1.333V12A1.332,1.332,0,0,0,18.667,13.333Z" />
+              </g>
+            </svg>
+            <a class="nav__item-link" href="#">Categories</a>
+          </li>
+          <li class="nav__item">
+            <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="25.129" height="26.666"
+              viewBox="0 0 25.129 26.666">
+              <g transform="translate(-3.435 -2.667)">
+                <path
+                  d="M16,21.333A5.333,5.333,0,1,0,10.667,16,5.339,5.339,0,0,0,16,21.333Zm0-8A2.667,2.667,0,1,1,13.333,16,2.7,2.7,0,0,1,16,13.333ZM3.793,21.515l1.334,2.306a2.742,2.742,0,0,0,3.64.974l.7-.408A10.8,10.8,0,0,0,12,25.869v.8a2.67,2.67,0,0,0,2.667,2.666h2.666A2.67,2.67,0,0,0,20,26.667v-.8a10.829,10.829,0,0,0,2.528-1.481l.7.408a2.743,2.743,0,0,0,3.642-.975l1.332-2.305a2.668,2.668,0,0,0-.975-3.643l-.673-.389a10.29,10.29,0,0,0,0-2.965l.673-.39a2.669,2.669,0,0,0,.975-3.642L26.875,8.18A2.739,2.739,0,0,0,23.233,7.2l-.7.408A10.8,10.8,0,0,0,20,6.131v-.8a2.67,2.67,0,0,0-2.667-2.666H14.667A2.67,2.67,0,0,0,12,5.333v.8A10.829,10.829,0,0,0,9.472,7.612l-.7-.408a2.741,2.741,0,0,0-3.642.976L3.793,10.485a2.668,2.668,0,0,0,.975,3.643l.673.39a10.244,10.244,0,0,0,0,2.963l-.673.39a2.67,2.67,0,0,0-.975,3.644Zm4.435-3.678a7.53,7.53,0,0,1,0-3.674A1.332,1.332,0,0,0,7.6,12.685l-1.5-.866,1.33-2.306L8.96,10.4a1.33,1.33,0,0,0,1.584-.19,8.1,8.1,0,0,1,3.179-1.865,1.333,1.333,0,0,0,.944-1.274V5.333h2.666V7.067a1.332,1.332,0,0,0,.944,1.274,8.11,8.11,0,0,1,3.179,1.866,1.333,1.333,0,0,0,1.584.189l1.525-.881,1.335,2.3-1.5.865a1.336,1.336,0,0,0-.627,1.478,7.53,7.53,0,0,1,0,3.674,1.335,1.335,0,0,0,.628,1.478l1.5.865-1.33,2.305L23.041,21.6a1.328,1.328,0,0,0-1.584.19,8.1,8.1,0,0,1-3.179,1.865,1.333,1.333,0,0,0-.944,1.274l0,1.734h-2.67V24.933a1.331,1.331,0,0,0-.943-1.274,8.11,8.11,0,0,1-3.179-1.866,1.33,1.33,0,0,0-1.584-.188l-1.525.883L6.1,20.183l1.5-.868a1.336,1.336,0,0,0,.628-1.478Z" />
+              </g>
+            </svg>
+            <a class="nav__item-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-        <section class="knowledge">
-          <h2 class="knowledge__title">Eco knowledge</h2>
-          <div class="knowledge__cards">
 
-            <div class="card card--navy">
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__footer">
-                <span class="card__sign card__sign--violet"></span>
-                <a class="card__link" href="#">portal name</a>
-              </div>
-            </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
 
-            <div class="card card--green">
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__footer">
-                <span class="card__sign card__sign--olive"></span>
-                <a class="card__link" href="#">portal name</a>
-              </div>
-            </div>
-            <div class="card card--lime-green">
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__footer">
-                <span class="card__sign card__sign--olive"></span>
-                <a class="card__link" href="#">portal name</a>
-              </div>
-            </div>
-            <div class="card card--dark-beige">
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__footer">
-                <span class="card__sign card__sign--olive"></span>
-                <a class="card__link card__link--navy" href="#">portal name</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <!-- <img
-                class="nav__item-image"
-                src="../assets/icons/nav-home.svg"
-                alt="link to the welcome screen."
-              /> -->
-              <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="26.666" height="26.667" viewBox="0 0 26.666 26.667"><g transform="translate(-2.666 -2.666)"><path d="M4,17.333H5.333v9.334A2.67,2.67,0,0,0,8,29.333H24a2.67,2.67,0,0,0,2.667-2.666V17.333H28a1.334,1.334,0,0,0,.943-2.276l-12-12a1.332,1.332,0,0,0-1.886,0l-12,12A1.333,1.333,0,0,0,4,17.333Zm9.333,9.334V20h5.334v6.667ZM16,5.885l8,8V26.667H21.333V20a2.67,2.67,0,0,0-2.666-2.667H13.333A2.67,2.67,0,0,0,10.667,20v6.667H8V13.885Z"/></g></svg>
-              <a class="nav__item-link" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <!-- <img
-                class="nav__item-image"
-                src="../assets/icons/nav-qr.svg"
-                alt="link to the welcome screen."
-              /> -->
-              <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g transform="translate(-109 -772)"><g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1"><path M2,0h8a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" stroke="none"/><path d="M2,.5H9a.5.5,0,0,1,.5.5V9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,9V2A1.5,1.5,0,0,1,2,.5Z" fill="none"/></g><rect width="6" height="6" rx="1" transform="translate(111 774)" /><g transform="translate(0 13)"><g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1"><path d="M0,0H10a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H2A2,2,0,0,1,0,8V0A0,0,0,0,1,0,0Z" stroke="none"/><path d="M1,.5H9a.5.5,0,0,1,.5.5V9a.5.5,0,0,1-.5.5H2A1.5,1.5,0,0,1,.5,8V1A.5.5,0,0,1,1,.5Z" fill="none"/></g><rect width="6" height="6" rx="1" transform="translate(111 774)" /></g><g transform="translate(13)"><g transform="translate(109 772)" fill="#fff" class="nav__item-image--stroke" stroke-width="1"><path d="M0,0H8a2,2,0,0,1,2,2v8a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/><path d="M1,.5H8A1.5,1.5,0,0,1,9.5,2V9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,9V1A.5.5,0,0,1,1,.5Z" fill="none"/></g><rect width="6" height="6" rx="1" transform="translate(111 774)"/></g><g transform="translate(13 13)"><rect width="2" height="2" transform="translate(109 772)" /><rect width="2" height="2" transform="translate(112 772)" /><rect width="2" height="2" transform="translate(111 775)" /><rect width="2" height="2" transform="translate(110 778)" /><rect width="2" height="2" transform="translate(113 779)" /><rect width="2" height="2" transform="translate(115 776)" /><rect width="2" height="2" transform="translate(117 778)" /><rect width="2" height="2" transform="translate(117 780)" /><rect width="2" height="2" transform="translate(114 772)" /><rect width="2" height="2" transform="translate(117 772)"/></g></g></svg>
-              <a class="nav__item-link" href="#">TrashQR</a>
-            </li>
-            <li class="nav__item">
-              <!-- <img
-                class="nav__item-image"
-                src="../assets/icons/nav-categories.svg"
-                alt="please scane your code QR."
-              /> -->
-              <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(-4 -4)"><path d="M5.333,17.333h8A1.333,1.333,0,0,0,14.667,16V5.333A1.333,1.333,0,0,0,13.333,4h-8A1.333,1.333,0,0,0,4,5.333V16A1.333,1.333,0,0,0,5.333,17.333ZM4,26.667A1.333,1.333,0,0,0,5.333,28h8a1.333,1.333,0,0,0,1.334-1.333V21.333A1.333,1.333,0,0,0,13.333,20h-8A1.333,1.333,0,0,0,4,21.333Zm13.333,0A1.332,1.332,0,0,0,18.667,28h8A1.332,1.332,0,0,0,28,26.667V17.333A1.332,1.332,0,0,0,26.667,16h-8a1.332,1.332,0,0,0-1.334,1.333Zm1.334-13.334h8A1.332,1.332,0,0,0,28,12V5.333A1.332,1.332,0,0,0,26.667,4h-8a1.332,1.332,0,0,0-1.334,1.333V12A1.332,1.332,0,0,0,18.667,13.333Z"/></g></svg>
-              <a class="nav__item-link" href="#">Categories</a>
-            </li>
-            <li class="nav__item">
-              <!-- <img
-                class="nav__item-image"
-                src="../assets/icons/nav-settings.svg"
-                alt="link to the categories."
-              /> -->
-              <svg class="nav__item-image" xmlns="http://www.w3.org/2000/svg" width="25.129" height="26.666" viewBox="0 0 25.129 26.666"><g transform="translate(-3.435 -2.667)"><path d="M16,21.333A5.333,5.333,0,1,0,10.667,16,5.339,5.339,0,0,0,16,21.333Zm0-8A2.667,2.667,0,1,1,13.333,16,2.7,2.7,0,0,1,16,13.333ZM3.793,21.515l1.334,2.306a2.742,2.742,0,0,0,3.64.974l.7-.408A10.8,10.8,0,0,0,12,25.869v.8a2.67,2.67,0,0,0,2.667,2.666h2.666A2.67,2.67,0,0,0,20,26.667v-.8a10.829,10.829,0,0,0,2.528-1.481l.7.408a2.743,2.743,0,0,0,3.642-.975l1.332-2.305a2.668,2.668,0,0,0-.975-3.643l-.673-.389a10.29,10.29,0,0,0,0-2.965l.673-.39a2.669,2.669,0,0,0,.975-3.642L26.875,8.18A2.739,2.739,0,0,0,23.233,7.2l-.7.408A10.8,10.8,0,0,0,20,6.131v-.8a2.67,2.67,0,0,0-2.667-2.666H14.667A2.67,2.67,0,0,0,12,5.333v.8A10.829,10.829,0,0,0,9.472,7.612l-.7-.408a2.741,2.741,0,0,0-3.642.976L3.793,10.485a2.668,2.668,0,0,0,.975,3.643l.673.39a10.244,10.244,0,0,0,0,2.963l-.673.39a2.67,2.67,0,0,0-.975,3.644Zm4.435-3.678a7.53,7.53,0,0,1,0-3.674A1.332,1.332,0,0,0,7.6,12.685l-1.5-.866,1.33-2.306L8.96,10.4a1.33,1.33,0,0,0,1.584-.19,8.1,8.1,0,0,1,3.179-1.865,1.333,1.333,0,0,0,.944-1.274V5.333h2.666V7.067a1.332,1.332,0,0,0,.944,1.274,8.11,8.11,0,0,1,3.179,1.866,1.333,1.333,0,0,0,1.584.189l1.525-.881,1.335,2.3-1.5.865a1.336,1.336,0,0,0-.627,1.478,7.53,7.53,0,0,1,0,3.674,1.335,1.335,0,0,0,.628,1.478l1.5.865-1.33,2.305L23.041,21.6a1.328,1.328,0,0,0-1.584.19,8.1,8.1,0,0,1-3.179,1.865,1.333,1.333,0,0,0-.944,1.274l0,1.734h-2.67V24.933a1.331,1.331,0,0,0-.943-1.274,8.11,8.11,0,0,1-3.179-1.866,1.33,1.33,0,0,0-1.584-.188l-1.525.883L6.1,20.183l1.5-.868a1.336,1.336,0,0,0,.628-1.478Z"/></g></svg>
-              <a class="nav__item-link" href="#">Settings</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
 </html>
