@@ -154,10 +154,10 @@
 
 .card {
   border-radius: 15px;
-  width: 49%;
+  width: 45%;
   padding: 1rem;
   color: $white;
-  margin: 2px auto;
+  margin: 10px auto;
   &--navy {
     background: $navy;
   }
@@ -202,5 +202,18 @@
     &--navy {
       color: $navy;
     }
+  }
+}
+
+.knowledge {
+  &__title {
+    color: $navy;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
