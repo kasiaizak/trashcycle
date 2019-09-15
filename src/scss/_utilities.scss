@@ -5,3 +5,8 @@
 .show {
   display: block;
 }
+
+.active {
+  background-color: $navy;
+  color: $white;
+}

@@ -22,10 +22,10 @@
     <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
     <link rel="stylesheet" href="css/main.css" />
-  </head> 
+  </head>
 <body>
   <main class="main">
-    <section class="welcome-screen">
+    <section class="welcome-screen welcome-screen--js">
       <h1 class="welcome-screen__header">trashcycle</h1>
       <img class="welcome-screen__image" src="assets/img/hero_image.svg"
         alt="Two people recycling trashes to recycling bin">
@@ -38,19 +38,19 @@
       </div>
 
       <div class="welcome-screen__start">
-        <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name welcome-screen__button--name-js"
-          placeholder="Your name" hidden/>
+        <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name welcome-screen__button--name-js hidden"
+          placeholder="Your name" />
         </br>
-        <button class="welcome-screen__button welcome-screen__button--start welcome-screen__button--start-js" hidden>START NOW!</button>
+        <button class="welcome-screen__button welcome-screen__button--start welcome-screen__button--start-js hidden" disabled>START NOW!</button>
       </div>
     </section>
 
-    <div class="user-screen hidden">
+    <div class="user-screen hidden user-screen--js">
       <header class="header">
         <p class="header__user-name">
           <span class="header__user-name--olive">Hello,</span> <br />Mariusz
         </p>
-        <img class="header__user-avatar" src="../assets/img/avatar.png" alt="author avatar." />
+        <img class="header__user-avatar" src="assets/img/avatar.png" alt="author avatar." />
       </header>
       <section class="statistics">
         <h2 class="statistics__title">Statistics</h2>
@@ -88,9 +88,9 @@
             </div>
             <div class="statistics-share">
               <a class="statistics-share__link" href="#"><img class="statistics-share__link-image"
-                  src="../assets/icons/bxs-share-alt.svg" alt="icon share." /></a>
+                  src="assets/icons/bxs-share-alt.svg" alt="icon share." /></a>
               <a class="statistics-share__link" href="#"><img class="statistics-share__link-image"
-                  src="../assets/icons/bx-dots-vertical-rounded.svg" alt="icon more." /></a>
+                  src="assets/icons/bx-dots-vertical-rounded.svg" alt="icon more." /></a>
             </div>
           </div>
         </div>

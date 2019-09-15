@@ -32,18 +32,28 @@ const userScreen = document.querySelector(".user-screen--js");
 const welcomeScreen = document.querySelector(".welcome-screen--js");
 
 function showContent() {
-  btnStart.removeAttribute("hidden");
-  inputName.removeAttribute("hidden");
-  btnBeEco.setAttribute("hidden", true);
-  welcomeParagraph.setAttribute("hidden", true);
+  btnStart.classList.remove("hidden");
+  inputName.classList.remove("hidden");
+  btnBeEco.classList.add("hidden");
+  welcomeParagraph.classList.add("hidden");
 }
 
 function hideWelcomeScreen(e) {
   const value = e.target.value;
-  if (value !== "") {
-    welcomeScreen.classList.add("hidden");
+  if(value !== ""){
+    btnStart.classList.add("active");
+    btnStart.removeAttribute("disabled");
+  } else {
+    btnStart.classList.remove("active");
+    btnStart.setAttribute("disabled", true);
   }
 }
 
-btnStart.addEventListener("click", hideWelcomeScreen);
+function showUserScreen() {
+  userScreen.classList.remove("hidden");
+  welcomeScreen.classList.add("hidden");
+}
+
+inputName.addEventListener("keyup", hideWelcomeScreen);
+btnStart.addEventListener("click", showUserScreen);
 btnBeEco.addEventListener("click", showContent);
