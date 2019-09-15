@@ -15,6 +15,14 @@ body {
   padding: 48px;
 }
 
+.main {
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .welcome-screen {
   display: flex;
   flex-direction: column;
