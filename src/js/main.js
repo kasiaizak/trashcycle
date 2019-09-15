@@ -28,6 +28,8 @@ const inputName = document.querySelector(".welcome-screen__button--name-js");
 const welcomeParagraph = document.querySelector(
   ".welcome-screen__paragraph--js"
 );
+const userScreen = document.querySelector(".user-screen--js");
+const welcomeScreen = document.querySelector(".welcome-screen--js");
 
 function showContent() {
   btnStart.removeAttribute("hidden");
@@ -36,4 +38,12 @@ function showContent() {
   welcomeParagraph.setAttribute("hidden", true);
 }
 
+function hideWelcomeScreen(e) {
+  const value = e.target.value;
+  if (value !== "") {
+    welcomeScreen.classList.add("hidden");
+  }
+}
+
+btnStart.addEventListener("click", hideWelcomeScreen);
 btnBeEco.addEventListener("click", showContent);
