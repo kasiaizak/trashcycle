@@ -28,6 +28,7 @@ const inputName = document.querySelector(".welcome-screen__button--name-js");
 const welcomeParagraph = document.querySelector(
   ".welcome-screen__paragraph--js"
 );
+const userName = document.querySelector(".header__user-name--js");
 const userScreen = document.querySelector(".user-screen--js");
 const welcomeScreen = document.querySelector(".welcome-screen--js");
 
@@ -43,6 +44,7 @@ function hideWelcomeScreen(e) {
   if(value !== ""){
     btnStart.classList.add("active");
     btnStart.removeAttribute("disabled");
+    userName.innerHTML = value;
   } else {
     btnStart.classList.remove("active");
     btnStart.setAttribute("disabled", true);
