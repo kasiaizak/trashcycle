@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>trashcycle</title>
+    <meta name="description" content="Description" />
+
+    <!-- Title -->
+    <meta property="og:title" content="" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="welcome-screen">
+        <h1 class="welcome-screen__header">trashcycle</h1>
+        <img class="welcome-screen__image" src="assets/img/hero_image.svg"
+          alt="Two people recycling trashes to recycling bin">
+      
+        <div class="welcome-screen__hello">
+          <p class="welcome-screen__paragraph">
+            Mother Earth needs your help everyday. You can do it!
+          </p>
+          <button class="welcome-screen__button welcome-screen__button--be-eco">Let’s be ECO!</button>
+        </div>
+      
+        <div class="welcome-screen__start">
+          <input type="text" name="name" class="welcome-screen__button welcome-screen__button--name" placeholder="Your name" />
+          </br>
+          <button class="welcome-screen__button welcome-screen__button--start">START NOW!</button>
+        </div>
+      </section>
+      
+      <div class="user-screen">
+        <header class="header">
+          <p class="header__user-name">
+            <span class="header__user-name--olive">Hello,</span> <br/>Mariusz
+          </p>
+          <img class="header__user-avatar" src="../assets/img/avatar.png" alt="author avatar." />
+        </header>
+        <section class="statistics">
+          <h2 class="statistics__title">Statistics</h2>
+          <div class="statistics__average">
+            <div class="statistics__average-image">
+              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="150" height="150"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
+                  cy="16.91549431" r="15.91549431" />
+                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100"
+                  stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                <g class="circle-chart__info">
+                  <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle"
+                    font-size="8">30%</text>
+                  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle"
+                    font-size="2">Yay 30% progress!</text>
+                </g>
+              </svg>
+            </div>
+            <div class="statistics__average-particular">
+              <div class="statistics__particular">
+                <span
+                  class="statistics__particular-sign statistics__particular-sign--blue"
+                ></span>
+                <span class="statistics__particular-name">Paper</span>
+                <span class="statistics__particular-percent">12%</span>
+              </div>
+              <div class="statistics__particular">
+                <span
+                  class="statistics__particular-sign statistics__particular-sign--yellow"
+                ></span>
+                <span class="statistics__particular-name">Plastic</span>
+                <span class="statistics__particular-percent">23%</span>
+              </div>
+              <div class="statistics__particular">
+                <span
+                  class="statistics__particular-sign statistics__particular-sign--green"
+                ></span>
+                <span class="statistics__particular-name">Glass</span>
+                <span class="statistics__particular-percent">45%</span>
+              </div>
+              <div class="statistics-share">
+                <a class="statistics-share__link" href="#"
+                  ><img
+                    class="statistics-share__link-image"
+                    src="../assets/icons/bxs-share-alt.svg"
+                    alt="icon share."
+                /></a>
+                <a class="statistics-share__link" href="#"
+                  ><img
+                    class="statistics-share__link-image"
+                    src="../assets/icons/bx-dots-vertical-rounded.svg"
+                    alt="icon more."
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="knowledge">
+          <h2 class="knowledge__title">Eco knowledge</h2>
+          <div class="knowledge__cards">
+
+            <div class="card card--navy">
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__footer">
+                <span class="card__sign card__sign--violet"></span>
+                <a class="card__link" href="#">portal name</a>
+              </div>
+            </div>
+
+            <div class="card card--green">
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__footer">
+                <span class="card__sign card__sign--olive"></span>
+                <a class="card__link" href="#">portal name</a>
+              </div>
+            </div>
+            <div class="card card--lime-green">
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__footer">
+                <span class="card__sign card__sign--olive"></span>
+                <a class="card__link" href="#">portal name</a>
+              </div>
+            </div>
+            <div class="card card--dark-beige">
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__footer">
+                <span class="card__sign card__sign--olive"></span>
+                <a class="card__link card__link--navy" href="#">portal name</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <img
+                class="nav__item-image"
+                src="#"
+                alt="link to the welcome screen."
+              />
+              <a class="nav__item-link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <img
+                class="nav__item-image"
+                src="#"
+                alt="link to the welcome screen."
+              />
+              <a class="nav__item-link" href="#">TrashQR</a>
+            </li>
+            <li class="nav__item">
+              <img
+                class="nav__item-image"
+                src="#"
+                alt="please scane your code QR."
+              />
+              <a class="nav__item-link" href="#">Categories</a>
+            </li>
+            <li class="nav__item">
+              <img
+                class="nav__item-image"
+                src="#"
+                alt="link to the categories."
+              />
+              <a class="nav__item-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
