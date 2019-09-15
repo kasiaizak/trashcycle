@@ -50,7 +50,7 @@
   &__title {
     width: 100%;
     margin: 10px 0;
-    margin-left: 30px;
+    padding-left: 30px;
     font-size: 1.25rem;
     color: $navy;
     font-weight: 600;
@@ -210,9 +210,11 @@
     color: $navy;
     font-size: 1.25rem;
     font-weight: 600;
-    padding-left: 15px;
+    margin: 10px 0;
+    padding-left: 30px;
   }
   &__cards {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
