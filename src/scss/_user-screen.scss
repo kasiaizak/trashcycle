@@ -66,4 +66,40 @@
     width: 50%;
     margin: 0 15px;
   }
+
+  &__average-particular {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  &__particular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $navy;
+    padding: 5px;
+  }
+
+  &__particular-sign {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    &--blue {
+      background-color: $blue;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--yellow {
+      background-color: $yellow;
+    }
+  }
 }
