@@ -139,9 +139,68 @@
   }
 }
 
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
 @keyframes circle-chart-appear {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.card {
+  border-radius: 15px;
+  width: 49%;
+  padding: 1rem;
+  color: $white;
+  margin: 2px auto;
+  &--navy {
+    background: $navy;
+  }
+  &--green {
+    background: $green;
+  }
+  &--lime-green {
+    background: $lime-green;
+  }
+  &--dark-beige {
+    background: $dark-beige;
+    color: $navy;
+  }
+
+  &__description {
+    margin: 0 0 10px 0;
+    line-height: 1.4rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sign {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    margin-right: 5px;
+    &--violet {
+      background: $violet;
+    }
+    &--olive {
+      background: $olive;
+    }
+  }
+
+  &__link {
+    font-size: 0.625rem;
+    text-decoration: none;
+    color: $white;
+    &--navy {
+      color: $navy;
+    }
   }
 }
